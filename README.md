@@ -13,12 +13,14 @@ pip install -r yolov5_strict_requirements.txt
 ### 1.2 Setting-up workspace
 Run the following commands in terminal:
 ```
+# clone repo
+git clone https://github.com/moksh-401-511/YOLOv5-ROS2-YOu-can-Leverage-On-ROS2.git
+
 # create directory
 mkdir -p ~/yolo_ws/src
 cd ~/yolo_ws/src
 
-# clone repo
-git clone https://github.com/moksh-401-511/YOLOv5-ROS2-YOu-can-Leverage-On-ROS2.git
+# paste the sub-directory, yolov5_ros2 from cloned repo in src folder
 
 # build workspace
 cd ~/yolo_ws
