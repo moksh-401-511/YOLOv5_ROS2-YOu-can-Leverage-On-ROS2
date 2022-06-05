@@ -1,6 +1,6 @@
 # YOLOv5 + ROS2 : YOu can Leverage On ROS2
 State-of-the-art object detection technique, [YOLOv5](https://github.com/ultralytics/yolov5) is now compatible with ROS2<br>
-![YOLOv5-ROS2-graph](yolov5_ros2/yolov5_ros2_graph.png)
+![YOLOv5-ROS2-graph]
 
 **Subscribed Topic**: 
   - input image-stream ```sensor_msgs/msg/Image```<br>
