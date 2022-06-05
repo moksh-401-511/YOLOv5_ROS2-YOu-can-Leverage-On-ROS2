@@ -13,7 +13,7 @@ State-of-the-art object detection technique, [YOLOv5](https://github.com/ultraly
 - Install ROS2 from the official [ROS2 website](https://www.ros.org/)<br>
 For Ubuntu Linux - Focal Fossa (20.04): [ROS Foxy installation guide](https://docs.ros.org/en/foxy/Installation.html)
 - Strictly necessary YOLOv5 related libraries and packages:<br>
-Run the following command in terminal for [yolov5_strict_requirements.txt](yolov5_ros/setup.py) file:
+Run the following command in terminal for [yolov5_strict_requirements.txt](yolov5_ros2/yolov5_strict_requirements.txt) file:
 ```
 pip install -r yolov5_strict_requirements.txt
 ```
