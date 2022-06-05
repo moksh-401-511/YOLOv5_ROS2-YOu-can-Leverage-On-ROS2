@@ -1,5 +1,12 @@
 # YOLOv5 + ROS2 : YOu can Leverage On ROS2
-State-of-the-art object detection technique, [YOLOv5](https://github.com/ultralytics/yolov5) is now compatible with ROS2
+State-of-the-art object detection technique, [YOLOv5](https://github.com/ultralytics/yolov5) is now compatible with ROS2<br>
+
+**Subscribed Topic**: 
+  - input image-stream ```sensor_msgs/msg/Image```<br>
+
+**Published Topic**: 
+  - image-stream with bounding box around detected objects ```sensor_msgs/msg/Image```<br>
+  - bounding boxes (manually created message type) ```boundingboxes/msg/BoundingBoxes```
 
 ## 1. Installation
 ### 1.1 Prerequisities
@@ -18,9 +25,8 @@ git clone https://github.com/moksh-401-511/YOLOv5-ROS2-YOu-can-Leverage-On-ROS2.
 
 # create directory
 mkdir -p ~/yolo_ws/src
-cd ~/yolo_ws/src
 
-# paste the sub-directory, yolov5_ros2 from cloned repo in src folder
+# paste the sub-directories (yolov5_ros2, boundingboxes) from cloned repo in src folder
 
 # build workspace
 cd ~/yolo_ws
