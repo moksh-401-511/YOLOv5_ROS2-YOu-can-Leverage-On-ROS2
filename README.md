@@ -1,13 +1,15 @@
 # YOLOv5 + ROS2 : YOu can Leverage On ROS2
 State-of-the-art object detection technique, [YOLOv5](https://github.com/ultralytics/yolov5) is now compatible with ROS2<br>
-![YOLOv5-ROS2-graph]
+![YOLOv5-ROS2-graph](yolov5_ros2/yolov5_ros2_graph.png)
 
 **Subscribed Topic**: 
-  - input image-stream ```sensor_msgs/msg/Image```<br>
+  - Input image-stream ```sensor_msgs/msg/Image```<br>
 
 **Published Topic**: 
-  - image-stream with bounding box around detected objects ```sensor_msgs/msg/Image```<br>
-  - bounding boxes (manually created message type) ```boundingboxes/msg/BoundingBoxes```
+  - Image-stream with bounding box around detected objects ```sensor_msgs/msg/Image```<br>
+  - Bounding boxes (manually created message type) ```boundingboxes/msg/BoundingBoxes```
+
+**Note:** Published image and boundingbox topics are assigned same time-stamp as that of subscribed image topic, so that input and output can be matched frame-by-frame if required for further processing.
 
 ## 1. Installation
 ### 1.1 Prerequisities
