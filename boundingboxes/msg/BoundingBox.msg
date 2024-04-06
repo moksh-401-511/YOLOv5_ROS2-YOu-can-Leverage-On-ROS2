@@ -6,4 +6,4 @@ uint16 id
 
 # float32 probability
 
-string class_id2
+string class_id3
